@@ -52,20 +52,20 @@
     /* background-size: 1px 1px; */
 }
 .front{
-    transform:rotateY(0deg)translateZ(21vmin);
+    transform:rotateY(0deg)translateZ(20.10vmin);
 }
 .back{
-    transform:rotateY(180deg)translateZ(21vmin);
+    transform:rotateY(180deg)translateZ(20.10vmin);
 }
 .left{
-    transform:rotateY(-90deg)translateZ(21vmin);
+    transform:rotateY(-90deg)translateZ(20.10vmin);
 }
 .right{
-    transform:rotateY(90deg)translateZ(21vmin);
+    transform:rotateY(90deg)translateZ(20.10vmin);
 }
 .top{
-    transform:rotateX(-90deg)translateZ(21vmin)
+    transform:rotateX(-90deg)translateZ(20.10vmin)
 }
 .bottom{
-    transform:rotateX(90deg)translateZ(21vmin);
+    transform:rotateX(90deg)translateZ(20.10vmin);
 }
