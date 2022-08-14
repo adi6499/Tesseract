@@ -1,0 +1,71 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+.contain{
+    width:100vw;
+    height:100vh;
+    display: grid;
+    place-items:center;
+    position:relative;
+    
+    background:radial-gradient(circle at center,#044673 ,black);
+}
+.scene{
+    width:40vmin;
+    height:40vmin;
+    perspective: 2300px;
+}
+.box{
+    width:100%;
+    height:100%;
+    position: absolute;
+    transform-style:preserve-3d;
+    animation:box 12s linear infinite;
+    transition:all 400ms linear;
+}
+@keyframes box {
+    0%{
+        transform: rotateX(0deg)rotateY(0deg)rotateZ(0deg);
+    }
+    100%{
+        transform:rotateX(360deg)rotateY(360deg)rotateZ(360deg);
+    }
+}
+.boxes{
+    width:100%;
+    height:100%;
+    background:radial-gradient(circle at center,#e2e2e7,#d8dde1,#5ab3c3,#47abc1,#2292b8,#07608f,#09518b),
+    repeating-linear-gradient(to right,#5cc6ff .2%,#1d93f4 .4%),
+    repeating-conic-gradient(from 0deg,#47abc1 0deg 10deg,#4fb2fd7e 40deg 60deg);
+    background-blend-mode:overlay;
+    position:absolute;
+    box-shadow: 0px 0px 3px #e2e2e7,
+    0px 0px 14px #3da8ff,
+    0px 0px 25px #00aff4,
+    0px 0px 36px #147ffa,
+    0px 0px 47px #1886f3,
+    0px 0px 58px #07608f,
+    0px 0px 69px #027ee3,
+    0px 0px 70px #379df1;
+    /* background-size: 1px 1px; */
+}
+.front{
+    transform:rotateY(0deg)translateZ(21vmin);
+}
+.back{
+    transform:rotateY(180deg)translateZ(21vmin);
+}
+.left{
+    transform:rotateY(-90deg)translateZ(21vmin);
+}
+.right{
+    transform:rotateY(90deg)translateZ(21vmin);
+}
+.top{
+    transform:rotateX(-90deg)translateZ(21vmin)
+}
+.bottom{
+    transform:rotateX(90deg)translateZ(21vmin);
+}
